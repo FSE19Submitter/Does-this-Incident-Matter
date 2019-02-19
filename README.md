@@ -16,6 +16,10 @@ This project is to implement the deep learning model in the paper, which propose
 
 2. Lamkanfi et al., which applies the standard text miningmethod to process text descriptions. Then, it counts tokenfrequency and uses the Naive Bayes algorithm to predictbug severity. `Baseline_Bayes.ipynb`
 
-3. Zhang at al., which applies the standard text miningmethod and calculates the similarities between a new bugreport and historical bug reports using BM25F and LDA(Latent Dirichlet Allocation). According to the similar-ities, it infers the bug severity based on the top-k nearestneighbors among historical reports (KNN). `Baseline_KNN.ipynb`
+3. Zhang at al., which applies the standard text miningmethod and calculates the similarities between a new bugreport and historical bug reports using BM25F and LDA(Latent Dirichlet Allocation). According to the similar-ities, it infers the bug severity based on the top-k nearestneighbors among historical reports (KNN). `Baseline_KNN.ipynb` 
+
+## Generality of DeepTIP
+
+We compared DeepTIP with the state-of-the-art bug severity prediction approach(Zhang at al.). Here, we used the same Mozilla dataset released in the compared work, and as reported in the paper the state-of-the-art approach achieved the precision of 0.439 and the recall of 0.486. Since the problem of Mozilla bug severity prediction is a 5-class classification problem, the current performance is relatively low. By applying DeepTIP to the same dataset, DeepTIP achieves the precision of 0.610 and the recall of 0.536, improving the state-of-the-art approach by 41.00% and 10.29% respectively. `Mozilla`
 
 ## Thanks
